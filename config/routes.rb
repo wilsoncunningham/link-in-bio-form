@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   get("/backdoor", {:controller => "items", :action => "item_form"})
 
-  get("/insert_item", {:controller => "items", :action => "insert_new_item"})
+  post("/insert_item", {:controller => "items", :action => "insert_new_item"})
 end
